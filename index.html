@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Nayana R | Software Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Nayana R, Software Engineer and Computer Science Engineering student showcasing projects, technical skills, timeline, and contact information.">
+  <meta name="author" content="Nayana R">
+  <meta property="og:title" content="Nayana R | Software Engineer Portfolio">
+  <meta property="og:description" content="Explore projects, skills, education, and career journey of Nayana R.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons (Google Fonts Preconnect + Pixel Art Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ========================================================= -->
+  <!--               MOBILE TOP HEADER (Responsive)             -->
+  <!-- ========================================================= -->
+  <header id="mobile-topbar" class="mobile-topbar">
+    <a href="#hero" class="brand-logo" aria-label="Nayana R - Home">
+      <span class="logo-symbol">&lt;</span><span class="logo-text">Nayana</span><span
+        class="logo-accent">.dev</span><span class="logo-symbol">/&gt;</span>
+    </a>
+
+    <div class="mobile-topbar-actions">
+      <!-- Quick Mobile Theme Switch -->
+      <button id="mobile-theme-toggle" class="pixel-btn mobile-theme-btn" type="button" aria-label="Toggle Night Mode"
+        title="Toggle Night / Day Mode">
+        <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+        <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-nav-toggle" class="pixel-btn mobile-menu-btn" type="button"
+        aria-label="Toggle vertical navigation menu" aria-expanded="false" aria-controls="vertical-navbar">
+        <span class="hamburger-icon">☰</span>
+        <span class="menu-label">MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!--              VERTICAL NAVIGATION BAR (LEFT SIDE)          -->
+  <!-- ========================================================= -->
+  <!-- 
+    VERTICAL NAVIGATION BAR:
+    - Placed on the left side of the screen
+    - Links: Home, About Me, Skills, Timeline, Projects, Testimonials, Chat, Contact
+    - Pixel art aesthetic styling with accessible keyboard support and responsive mobile drawer
+  -->
+  <aside id="vertical-navbar" class="pixel-sidebar" aria-label="Vertical Site Navigation">
+    <div class="sidebar-inner">
+      <!-- Top Arcade Logo / Header -->
+      <div class="sidebar-header">
+        <a href="#hero" class="sidebar-logo" aria-label="Nayana R - Home">
+          <div class="logo-marquee">
+            <span class="pixel-coin-icon">★</span>
+            <span class="logo-code">&lt;DEV.EXE&gt;</span>
+          </div>
+          <span class="sidebar-author-name">NAYANA R</span>
+        </a>
+
+        <!-- Close button for mobile drawer -->
+        <button id="close-sidebar-btn" class="pixel-btn close-sidebar-btn" type="button"
+          aria-label="Close navigation menu">
+          ✕
+        </button>
+      </div>
+
+      <!-- Vertical Navigation Links -->
+      <nav class="sidebar-nav" aria-label="Primary Navigation">
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
+            <a href="#hero" class="sidebar-link active" data-nav="hero" aria-current="page">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#about" class="sidebar-link" data-nav="about">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-label">About Me</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#skills" class="sidebar-link" data-nav="skills">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">⚡</span>
+              <span class="nav-label">Skills</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#timeline" class="sidebar-link" data-nav="timeline">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">⏳</span>
+              <span class="nav-label">Timeline</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#projects" class="sidebar-link" data-nav="projects">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">📁</span>
+              <span class="nav-label">Projects</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <!-- YouTube / Video Showcase section link -->
+            <a href="#youtube" class="sidebar-link" data-nav="youtube">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">▶️</span>
+              <span class="nav-label">Videos</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#testimonials" class="sidebar-link" data-nav="testimonials">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">💬</span>
+              <span class="nav-label">Testimonials</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#chat" class="sidebar-link" data-nav="chat">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">👾</span>
+              <span class="nav-label">Chat</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#contact" class="sidebar-link" data-nav="contact">
+              <span class="pixel-cursor-arrow" aria-hidden="true">▶</span>
+              <span class="nav-icon" aria-hidden="true">✉</span>
+              <span class="nav-label">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer Controls: Theme Toggle & Quick Status -->
+      <div class="sidebar-footer">
+        <div class="sidebar-status-box">
+          <span class="sidebar-status-dot"></span>
+          <span class="sidebar-status-text">PLAYER 1 READY</span>
+        </div>
+
+        <button id="theme-toggle" class="pixel-btn sidebar-theme-toggle" type="button" aria-label="Toggle Night Mode"
+          title="Toggle Night / Day Theme">
+          <span class="theme-icon light-icon" aria-hidden="true">☀️ DAY MODE</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">🌙 NIGHT MODE</span>
+        </button>
+
+        <div class="sidebar-socials">
+          <a href="https://github.com/nayanayadav113-wq" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Profile" class="sidebar-social-link">GH</a>
+          <a href="https://linkedin.com/in/nayana-r-323054398" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn Profile" class="sidebar-social-link">IN</a>
+          <a href="mailto:nayanayadav113@gmail.com" aria-label="Email Nayana" class="sidebar-social-link">MAIL</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================= -->
+  <!--                      MAIN CONTENT                         -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!--                     HERO SECTION                        -->
+    <!-- ======================================================= -->
+    <!-- 
+      SECTION: Hero
+      - Pixel Art Style Design implemented in CSS
+      - User provided background image (banner.jpg) with retro overlay & scanlines
+      - Welcomes visitors with title and brief tagline
+      - Night mode toggle detecting user's default browser theme
+    -->
+    <section id="hero" class="section hero-section pixel-hero-section" aria-labelledby="hero-title">
+      <!-- Background Image Layer (User provided banner.jpg) -->
+      <div class="pixel-bg-layer" aria-hidden="true"></div>
+      <div class="pixel-scanlines" aria-hidden="true"></div>
+      <div class="pixel-grid-overlay" aria-hidden="true"></div>
+
+      <div class="section-container hero-container pixel-hero-container">
+        <!-- Retro Pixel HUD / Status Top Bar -->
+        <div class="pixel-hud-bar">
+          <div class="pixel-hud-status">
+            <span class="pixel-blink-dot"></span>
+            <span class="pixel-hud-text">STATUS: PLAYER 1 READY</span>
+          </div>
+
+          <!-- Night Mode Toggle displaying browser theme detection -->
+          <div class="pixel-theme-hud-control">
+            <span class="pixel-hud-theme-label">SYSTEM THEME:</span>
+            <button id="hero-theme-toggle" class="pixel-btn pixel-theme-toggle-btn" type="button"
+              aria-label="Toggle Night Mode" title="Toggle Night / Day Theme">
+              <span class="theme-icon light-icon" aria-hidden="true">☀️ DAY MODE</span>
+              <span class="theme-icon dark-icon" aria-hidden="true">🌙 NIGHT MODE</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Hero Layout Grid -->
+        <div class="pixel-hero-grid">
+          <!-- Text and Tagline Column -->
+          <div class="pixel-hero-content">
+            <div class="pixel-badge">
+              <span class="pixel-badge-icon">👾</span> LEVEL 2026 • SOFTWARE ENGINEER
+            </div>
+
+            <!-- Welcome Title -->
+            <h1 id="hero-title" class="pixel-welcome-title">
+              WELCOME, VISITOR!
+            </h1>
+
+            <p class="pixel-char-name">
+              &gt; I'M <span class="pixel-name-highlight">NAYANA R</span>
+            </p>
+
+            <!-- Brief Tagline in Pixel Dialogue Box -->
+            <div class="pixel-dialogue-box">
+              <div class="dialogue-box-header">
+                <span class="dialogue-box-title">◆ MISSION BRIEFING ◆</span>
+                <span class="dialogue-box-corner">▼</span>
+              </div>
+              <p class="pixel-tagline">
+                "Dream It. Plan It. Work for It. Make it happen."
+              </p>
+              <p class="pixel-bio-text">
+                Undergraduate Software Engineer at AIT building practical applications, water harvesting solutions, and
+                electrical safety systems.
+                <span class="pixel-cursor" aria-hidden="true">_</span>
+              </p>
+            </div>
+
+            <!-- Pixel RPG Stats HUD -->
+            <div class="pixel-stats-hud">
+              <div class="pixel-stat-bar-group">
+                <div class="stat-label-row">
+                  <span class="stat-name">HP [PASSION]</span>
+                  <span class="stat-val">100/100</span>
+                </div>
+                <div class="pixel-bar-track">
+                  <div class="pixel-bar-fill stat-hp" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="pixel-stat-bar-group">
+                <div class="stat-label-row">
+                  <span class="stat-name">MP [PYTHON &bull; C &bull; OOPS]</span>
+                  <span class="stat-val">95/100</span>
+                </div>
+                <div class="pixel-bar-track">
+                  <div class="pixel-bar-fill stat-mp" style="width: 95%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pixel CTA Buttons -->
+            <div class="pixel-cta-group">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                ▶ EXPLORE PROJECTS
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                ✉ CONTACT ME
+              </a>
+              <a href="https://github.com/nayanayadav113-wq" target="_blank" rel="noopener noreferrer"
+                class="pixel-btn pixel-btn-ghost">
+                ★ GITHUB
+              </a>
+            </div>
+          </div>
+
+          <!-- Pixel Portrait Column -->
+          <div class="pixel-hero-visual">
+            <div class="pixel-portrait-frame">
+              <div class="pixel-corner-deco top-left"></div>
+              <div class="pixel-corner-deco top-right"></div>
+              <div class="pixel-corner-deco bottom-left"></div>
+              <div class="pixel-corner-deco bottom-right"></div>
+
+              <div class="pixel-portrait-card">
+                <img src="profile.jpg" alt="Portrait of Nayana R" class="pixel-portrait-img" />
+                <div class="pixel-portrait-hud">
+                  <span class="pixel-char-class">CLASS: DEVELOPER</span>
+                  <span class="pixel-char-xp">EXP: 8.02 CGPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                     ABOUT SECTION                       -->
+    <!-- ======================================================= -->
+    <!-- 
+      SECTION: About Me
+      - Clean, minimalistic pixel-art design
+      - Profile image (16-bit pixel avatar & photo toggle)
+      - Short bio describing the software engineer
+      - Introduction to career highlights & personal interests
+    -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="section-container">
+        <!-- Section Header -->
+        <header class="section-header">
+          <div class="pixel-section-tag">◆ PLAYER PROFILE ◆</div>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know the developer behind the code, her journey, and her aspirations</p>
+        </header>
+
+        <!-- About Main Container -->
+        <div class="about-minimal-wrapper">
+          <!-- Left Column: Avatar & Quick Info -->
+          <div class="about-avatar-column">
+            <div class="about-avatar-card">
+              <div class="avatar-view-wrapper">
+                <img id="about-avatar-img" src="pixel_avatar.jpg" alt="Pixel Art Avatar of Nayana R"
+                  class="about-avatar-img" />
+              </div>
+
+              <!-- Quick Avatar View Toggle (Pixel / Photo) -->
+              <div class="avatar-toggle-control" aria-label="Avatar view switcher">
+                <button type="button" class="avatar-mode-btn active" data-img="pixel_avatar.jpg">
+                  👾 Pixel Art
+                </button>
+                <button type="button" class="avatar-mode-btn" data-img="profile.jpg">
+                  📷 Real Photo
+                </button>
+              </div>
+
+              <div class="about-profile-info">
+                <h3 class="profile-name">Nayana R</h3>
+                <span class="profile-badge">B.E. Computer Science &amp; Engineering</span>
+                <p class="profile-location">📍 Karnataka, India</p>
+              </div>
+            </div>
+
+            <!-- Quick Stat Bar -->
+            <div class="about-quick-stats">
+              <div class="mini-stat-item">
+                <span class="mini-stat-number">8.02</span>
+                <span class="mini-stat-label">B.E. CGPA</span>
+              </div>
+              <div class="mini-stat-item">
+                <span class="mini-stat-number">89.3%</span>
+                <span class="mini-stat-label">PU Distinction</span>
+              </div>
+              <div class="mini-stat-item">
+                <span class="mini-stat-number">2+</span>
+                <span class="mini-stat-label">Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Highlights & Interests -->
+          <div class="about-details-column">
+            <!-- Short Bio -->
+            <div class="about-bio-card">
+              <h3 class="card-headline">
+                <span class="headline-icon">👋</span> Engineering With Passion &amp; Purpose
+              </h3>
+              <p class="bio-paragraph">
+                I am an undergraduate Software Engineer pursuing my Bachelor of Engineering in <strong>Computer Science
+                  &amp; Engineering</strong> at <strong>Adhichunchanagiri Institute of Technology</strong>. My passion
+                lies in transforming theoretical computer science logic and mathematics into robust, real-world digital
+                solutions.
+              </p>
+              <p class="bio-paragraph">
+                With a solid foundation in <strong>Python, C, and Object-Oriented Programming</strong>, I enjoy
+                developing software that bridges the gap between hardware constraints and intuitive user interfaces. I
+                believe great engineering is not just about writing code—it's about building systems that create
+                tangible value and solve pressing challenges.
+              </p>
+            </div>
+
+            <!-- Split Grid: Career Highlights & Personal Interests -->
+            <div class="about-split-grid">
+              <!-- Career Highlights -->
+              <div class="about-subcard highlights-card">
+                <div class="subcard-header">
+                  <span class="subcard-icon">🏆</span>
+                  <h4 class="subcard-title">Career &amp; Academic Highlights</h4>
+                </div>
+                <ul class="subcard-list">
+                  <li>
+                    <strong>Academic Excellence:</strong> Maintaining an <strong>8.02 CGPA</strong> at AIT and graduated
+                    with <strong>89.33%</strong> in PCMB Pre-University education.
+                  </li>
+                  <li>
+                    <strong>Practical Solutions:</strong> Conceptualized and built solutions for <em>Rainwater
+                      Harvesting</em> and <em>Voltage Fluctuations Detection</em>.
+                  </li>
+                  <li>
+                    <strong>Leadership &amp; Growth:</strong> Completed <em>"Bridging the Gap Towards Self
+                      Assurance"</em> to cultivate high-performance teamwork and communication skills.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Personal Interests -->
+              <div class="about-subcard interests-card">
+                <div class="subcard-header">
+                  <span class="subcard-icon">💡</span>
+                  <h4 class="subcard-title">Personal Interests</h4>
+                </div>
+                <ul class="subcard-list">
+                  <li>
+                    <strong>🌿 Sustainability &amp; Green Tech:</strong> Creating software that supports conservation
+                    and renewable community resources.
+                  </li>
+                  <li>
+                    <strong>⚡ Hardware &amp; Sensor Systems:</strong> Testing circuits, electrical safety components,
+                    and physical computing.
+                  </li>
+                  <li>
+                    <strong>👾 Retro Pixel Design:</strong> Crafting nostalgic 8-bit &amp; 16-bit interactive user
+                    interfaces with modern web standards.
+                  </li>
+                  <li>
+                    <strong>📚 Lifelong Learning:</strong> Continuous practice in algorithms, data structures, and
+                    emerging open-source tech.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                     SKILLS SECTION                      -->
+    <!-- ======================================================= -->
+    <!--
+      SECTION: Skills
+      - Pixel art aesthetic: HUD header, pixel borders, scanline overlay
+      - Category tabs for filtering skill groups (Languages, CS, Web, Tools)
+      - Each skill rendered with:
+          * Custom pixel icon
+          * XP-style animated progress bar (triggered on scroll into view)
+          * Level badge (colour-coded: green=advanced, cyan=intermediate, yellow=learning)
+      - Hover effects: card lifts with yellow pixel border glow
+      - Animated entrance: cards slide up when the section scrolls into view
+      - "Special Abilities" row at the bottom for soft skills / cross-domain strengths
+    -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="section-container">
+
+        <!-- Section Header with pixel-art tag -->
+        <header class="section-header">
+          <div class="pixel-section-tag">◆ SKILL TREE ◆</div>
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core languages, frameworks, tools & cross-domain competencies</p>
+        </header>
+
+        <!-- ── Category Filter Tabs ──────────────────────────── -->
+        <!-- Clicking a tab shows only cards in that category group -->
+        <div class="skills-tabs" role="tablist" aria-label="Skill categories">
+          <button class="skills-tab active" role="tab" data-filter="all" aria-selected="true">⬛ All Skills</button>
+          <button class="skills-tab" role="tab" data-filter="lang" aria-selected="false">💻 Languages</button>
+          <button class="skills-tab" role="tab" data-filter="cs" aria-selected="false">⚙️ Core CS</button>
+          <button class="skills-tab" role="tab" data-filter="web" aria-selected="false">🌐 Web Dev</button>
+          <button class="skills-tab" role="tab" data-filter="tools" aria-selected="false">🛠️ Tools</button>
+        </div>
+
+        <!-- ── Skill Cards Grid ──────────────────────────────── -->
+        <div class="skills-pixel-grid" id="skills-grid">
+
+          <!-- ─── CARD: Python ─────────────────────────────── -->
+          <!-- data-category links to the filter tab above      -->
+          <article class="skill-pixel-card" data-category="lang" aria-label="Python skill">
+            <div class="skill-card-top">
+              <!-- Pixel icon for this language -->
+              <span class="skill-px-icon">🐍</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Python</h3>
+                <!-- Level badge colour: green = Proficient -->
+                <span class="skill-level-badge badge-green">Proficient</span>
+              </div>
+              <!-- XP percentage used to animate the bar width via JS -->
+              <span class="skill-xp-label">90 XP</span>
+            </div>
+            <!-- Progress bar track; data-xp drives the animated fill -->
+            <div class="skill-bar-track" aria-label="Python skill level 90%">
+              <div class="skill-bar-fill" data-xp="90" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Primary language for scripting, automation, and project logic</p>
+          </article>
+
+          <!-- ─── CARD: C ──────────────────────────────────── -->
+          <article class="skill-pixel-card" data-category="lang" aria-label="C skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">⚡</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">C Language</h3>
+                <span class="skill-level-badge badge-green">Core Logic</span>
+              </div>
+              <span class="skill-xp-label">82 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="C skill level 82%">
+              <div class="skill-bar-fill" data-xp="82" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Low-level programming, memory management, systems thinking</p>
+          </article>
+
+          <!-- ─── CARD: Java ───────────────────────────────── -->
+          <article class="skill-pixel-card" data-category="lang" aria-label="Java skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">☕</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Java</h3>
+                <!-- Yellow badge = still learning -->
+                <span class="skill-level-badge badge-yellow">In Progress</span>
+              </div>
+              <span class="skill-xp-label">55 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="Java skill level 55%">
+              <div class="skill-bar-fill" data-xp="55" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">OOP principles, class hierarchies, multi-paradigm foundations</p>
+          </article>
+
+          <!-- ─── CARD: OOP ─────────────────────────────────── -->
+          <article class="skill-pixel-card" data-category="cs" aria-label="OOP skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🔷</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">OOP Concepts</h3>
+                <span class="skill-level-badge badge-green">Solid</span>
+              </div>
+              <span class="skill-xp-label">88 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="OOP skill level 88%">
+              <div class="skill-bar-fill" data-xp="88" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Encapsulation, inheritance, polymorphism — applied in Python & C</p>
+          </article>
+
+          <!-- ─── CARD: Data Structures ────────────────────── -->
+          <article class="skill-pixel-card" data-category="cs" aria-label="Data Structures skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🗂️</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Data Structures</h3>
+                <!-- Cyan badge = intermediate learning stage -->
+                <span class="skill-level-badge badge-cyan">Learning</span>
+              </div>
+              <span class="skill-xp-label">65 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="Data Structures skill level 65%">
+              <div class="skill-bar-fill" data-xp="65" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Arrays, linked lists, stacks, queues, trees & hash maps</p>
+          </article>
+
+          <!-- ─── CARD: Algorithm Analysis ─────────────────── -->
+          <article class="skill-pixel-card" data-category="cs" aria-label="Algorithm Analysis skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">📐</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Algorithm Analysis</h3>
+                <span class="skill-level-badge badge-cyan">Foundations</span>
+              </div>
+              <span class="skill-xp-label">60 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="Algorithm Analysis skill level 60%">
+              <div class="skill-bar-fill" data-xp="60" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Big-O notation, sorting, searching, problem decomposition</p>
+          </article>
+
+          <!-- ─── CARD: HTML5 ──────────────────────────────── -->
+          <article class="skill-pixel-card" data-category="web" aria-label="HTML5 skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🏗️</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-level-badge badge-green">Semantic</span>
+              </div>
+              <span class="skill-xp-label">92 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="HTML5 skill level 92%">
+              <div class="skill-bar-fill" data-xp="92" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Semantic markup, accessibility, SEO-friendly document structure</p>
+          </article>
+
+          <!-- ─── CARD: CSS3 ───────────────────────────────── -->
+          <article class="skill-pixel-card" data-category="web" aria-label="CSS3 skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🎨</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">CSS3 & Modern UI</h3>
+                <span class="skill-level-badge badge-green">Responsive</span>
+              </div>
+              <span class="skill-xp-label">88 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="CSS3 skill level 88%">
+              <div class="skill-bar-fill" data-xp="88" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Flexbox, Grid, custom properties, dark mode, pixel art effects</p>
+          </article>
+
+          <!-- ─── CARD: JavaScript ─────────────────────────── -->
+          <article class="skill-pixel-card" data-category="web" aria-label="JavaScript skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">⚙️</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">JavaScript (ES6+)</h3>
+                <span class="skill-level-badge badge-cyan">Interactive</span>
+              </div>
+              <span class="skill-xp-label">75 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="JavaScript skill level 75%">
+              <div class="skill-bar-fill" data-xp="75" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">DOM manipulation, events, async patterns, IntersectionObserver</p>
+          </article>
+
+          <!-- ─── CARD: Git & GitHub ───────────────────────── -->
+          <article class="skill-pixel-card" data-category="tools" aria-label="Git and GitHub skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🐙</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+                <span class="skill-level-badge badge-green">Version Control</span>
+              </div>
+              <span class="skill-xp-label">80 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="Git skill level 80%">
+              <div class="skill-bar-fill" data-xp="80" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Commit history, branching, pull requests, open-source workflow</p>
+          </article>
+
+          <!-- ─── CARD: Circuit & Sensor Testing ──────────── -->
+          <article class="skill-pixel-card" data-category="tools" aria-label="Circuit and Sensor Testing skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">🔌</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">Circuit &amp; Sensor Testing</h3>
+                <span class="skill-level-badge badge-cyan">Hardware</span>
+              </div>
+              <span class="skill-xp-label">70 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="Circuit Testing skill level 70%">
+              <div class="skill-bar-fill" data-xp="70" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Voltage sensors, relay modules, component integration & reliability</p>
+          </article>
+
+          <!-- ─── CARD: System Monitoring ─────────────────── -->
+          <article class="skill-pixel-card" data-category="tools" aria-label="System Monitoring skill">
+            <div class="skill-card-top">
+              <span class="skill-px-icon">📡</span>
+              <div class="skill-card-meta">
+                <h3 class="skill-name">System Monitoring</h3>
+                <span class="skill-level-badge badge-cyan">Practical</span>
+              </div>
+              <span class="skill-xp-label">68 XP</span>
+            </div>
+            <div class="skill-bar-track" aria-label="System Monitoring skill level 68%">
+              <div class="skill-bar-fill" data-xp="68" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Real-time diagnostics, alert systems, data-driven safety mechanisms</p>
+          </article>
+
+        </div><!-- /skills-pixel-grid -->
+
+        <!-- ── Special Abilities Row ─────────────────────────── -->
+        <!--
+          "Special Abilities" = cross-domain soft skills shown as
+          pixel-art badge chips (no progress bar needed; these are
+          binary / holistic traits rather than measurable percentages)
+        -->
+        <div class="skills-special-row">
+          <div class="special-row-header">
+            <span class="pixel-section-tag small">✦ SPECIAL ABILITIES</span>
+          </div>
+          <div class="special-badges-list">
+            <span class="special-badge">🧩 Problem Solving</span>
+            <span class="special-badge">📚 Self-Directed Learning</span>
+            <span class="special-badge">🤝 Team Collaboration</span>
+            <span class="special-badge">🌱 Sustainability Thinking</span>
+            <span class="special-badge">📝 Technical Documentation</span>
+            <span class="special-badge">🎮 Pixel Art &amp; Retro UI Design</span>
+            <span class="special-badge">🔋 Hardware-Software Integration</span>
+          </div>
+        </div>
+
+      </div><!-- /section-container -->
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                    TIMELINE SECTION                     -->
+    <!-- ======================================================= -->
+    <!--
+      SECTION: Timeline (Education, Projects & Milestones)
+      - Alternating left / right card layout on desktop (zigzag)
+      - Centred pixel-art connector line with category icon nodes
+      - Each card: category badge, year chip, title, institution/context,
+        description, and a pixel achievement tag
+      - Cards animate in from left/right on scroll (IntersectionObserver in JS)
+      - Smooth hover: card lifts + yellow border glow (consistent with skills cards)
+      - Three category types colour-coded:
+          🎓 Education  → cyan accent
+          🚀 Project    → indigo accent
+          ⭐ Milestone  → yellow accent
+    -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <header class="section-header">
+          <div class="pixel-section-tag">◆ QUEST LOG ◆</div>
+          <h2 id="timeline-title" class="section-title">Timeline &amp; Milestones</h2>
+          <p class="section-subtitle">Education, projects and career milestones — the journey so far</p>
+        </header>
+
+        <!-- ── Timeline Track ────────────────────────────────── -->
+        <!--
+          .tl-track holds the centred vertical line and all cards.
+          Odd items sit on the LEFT, even items on the RIGHT (CSS nth-child).
+        -->
+        <div class="tl-track" id="tl-track">
+
+          <!-- ── ITEM 1: B.E. Degree (current) ──────────────── -->
+          <!--
+            data-tl-type drives the colour of the connector node:
+              "edu"       → cyan
+              "project"   → indigo
+              "milestone" → yellow
+          -->
+          <article class="tl-item tl-left" data-tl-type="edu" aria-label="B.E. Computer Science milestone">
+            <!-- Centre node: pixel icon sits on the vertical line -->
+            <div class="tl-node" aria-hidden="true">🎓</div>
+
+            <!-- Card — the main hoverable rounded box -->
+            <div class="tl-card">
+              <!-- Top row: category label + year chip -->
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-edu">📚 Education</span>
+                <span class="tl-year-chip">2025 – 2029</span>
+              </div>
+
+              <!-- Role / title of the milestone -->
+              <h3 class="tl-role">B.E. Computer Science &amp; Engineering</h3>
+
+              <!-- Institution or context -->
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🏛️</span>
+                Adhichunchanagiri Institute of Technology, Chikkamagaluru
+              </p>
+
+              <!-- Short description of the milestone -->
+              <p class="tl-desc">
+                Immersed in core CS courses, programming abstractions, systems design and collaborative engineering
+                projects. Actively building real-world full-stack web applications alongside coursework.
+              </p>
+
+              <!-- Achievement tag — a standout metric or award -->
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">⭐</span>
+                <span>Current CGPA: <strong>8.02 / 10</strong></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ITEM 2: Rainwater Harvesting Project ─────────── -->
+          <article class="tl-item tl-right" data-tl-type="project" aria-label="Rainwater Harvesting project milestone">
+            <div class="tl-node" aria-hidden="true">🚀</div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-project">🛠️ Project</span>
+                <span class="tl-year-chip">2025 · 3 months</span>
+              </div>
+              <h3 class="tl-role">Rain Water Harvesting System</h3>
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🌿</span>
+                Environmental Sustainability Initiative — AIT
+              </p>
+              <p class="tl-desc">
+                Conceptualised and built an eco-friendly rainwater harvesting initiative: collected and conserved
+                rainwater for future use, researched groundwater recharge mechanisms and filtration suitable for rural
+                and urban communities.
+              </p>
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">🌱</span>
+                <span>Focus: <strong>Sustainability &amp; Water Conservation</strong></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ITEM 3: Voltage Fluctuation Project ──────────── -->
+          <article class="tl-item tl-left" data-tl-type="project" aria-label="Voltage detection project milestone">
+            <div class="tl-node" aria-hidden="true">⚡</div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-project">🛠️ Project</span>
+                <span class="tl-year-chip">2025 · 3 months</span>
+              </div>
+              <h3 class="tl-role">Voltage Fluctuations Detection System</h3>
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🔌</span>
+                Electrical Safety &amp; Monitoring — AIT Lab
+              </p>
+              <p class="tl-desc">
+                Developed a hardware-software safety mechanism to rapidly detect voltage spikes and drops, protecting
+                sensitive appliances. Handled component integration, sensor testing, and reliability metrics
+                documentation.
+              </p>
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">🏆</span>
+                <span>Outcome: <strong>Zero-Error Hardware Validation</strong></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ITEM 4: Leadership Programme ─────────────────── -->
+          <article class="tl-item tl-right" data-tl-type="milestone" aria-label="Leadership programme milestone">
+            <div class="tl-node" aria-hidden="true">🌟</div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-milestone">⭐ Milestone</span>
+                <span class="tl-year-chip">2025</span>
+              </div>
+              <h3 class="tl-role">Bridging the Gap Towards Self Assurance</h3>
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🤝</span>
+                Leadership &amp; Communication Development Programme
+              </p>
+              <p class="tl-desc">
+                Completed a structured programme cultivating high-performance teamwork, interpersonal communication
+                skills and professional self-confidence — enabling more effective collaboration on group engineering
+                projects.
+              </p>
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">💡</span>
+                <span>Skill unlocked: <strong>Team Leadership &amp; Communication</strong></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ITEM 5: Pre-University ────────────────────────── -->
+          <article class="tl-item tl-left" data-tl-type="edu" aria-label="Pre-University education milestone">
+            <div class="tl-node" aria-hidden="true">📖</div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-edu">📚 Education</span>
+                <span class="tl-year-chip">2023 – 2025</span>
+              </div>
+              <h3 class="tl-role">Pre-University Education (PCMB)</h3>
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🏫</span>
+                RP Residential PU College, Hosadurga
+              </p>
+              <p class="tl-desc">
+                Comprehensive training in Physics, Chemistry, Mathematics and Biology. Developed rigorous
+                problem-solving foundations, analytical thinking, and the scientific method that underpin software
+                engineering practice.
+              </p>
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">⭐</span>
+                <span>Score: <strong>89.33% — Distinction</strong></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ITEM 6: SSLC ──────────────────────────────────── -->
+          <article class="tl-item tl-right" data-tl-type="edu" aria-label="SSLC high school milestone">
+            <div class="tl-node" aria-hidden="true">🏅</div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <span class="tl-cat-badge tl-cat-edu">📚 Education</span>
+                <span class="tl-year-chip">2022 – 2023</span>
+              </div>
+              <h3 class="tl-role">Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="tl-institution">
+                <span class="tl-inst-icon" aria-hidden="true">🏫</span>
+                SMT Indira Gandhi Residential School, B Durga
+              </p>
+              <p class="tl-desc">
+                Graduated with distinction. Built strong analytical fundamentals, cultivated intellectual discipline,
+                and developed a curiosity-driven approach to science and technology that sparked the journey into
+                computer science.
+              </p>
+              <div class="tl-achievement">
+                <span class="tl-achievement-icon">⭐</span>
+                <span>Score: <strong>88.8% — Distinction</strong></span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /tl-track -->
+      </div><!-- /section-container -->
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                    PROJECTS SECTION                     -->
+    <!-- ======================================================= -->
+    <!--
+      SECTION: Projects — Thumbnail Gallery with Modal Detail View
+      ─────────────────────────────────────────────────────────────
+      HOW THUMBNAILS CONNECT TO PROJECT DETAILS:
+      Each .proj-thumb-card carries a [data-project="<id>"] attribute.
+      When the user clicks a thumbnail (or presses Enter/Space), JavaScript
+      reads that ID, finds the matching hidden .proj-modal-content[data-modal="<id>"]
+      block inside #proj-detail-modal, and makes the modal visible.
+      The same ID wires the close button back so Escape / click-outside also works.
+
+      Project IDs used:
+        1. data-project="water"     → Rainwater Harvesting System
+        2. data-project="voltage"   → Voltage Fluctuations Detection System
+        3. data-project="portfolio" → Personal Developer Portfolio
+    -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <header class="section-header">
+          <div class="pixel-section-tag">◆ MISSION SELECT ◆</div>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Click any project thumbnail to explore full details, tech stack &amp; outcomes</p>
+        </header>
+
+        <!-- ── PROJECT THUMBNAIL GRID ─────────────────────────────────
+             Each card below is the "thumbnail" a visitor first sees.
+             The [data-project] value is the KEY that JS uses to look up
+             the corresponding modal panel — it must match data-modal exactly.
+        ──────────────────────────────────────────────────────────────── -->
+        <div class="proj-thumb-grid">
+
+          <!-- ─────────────────────────────────────────────────────────
+               THUMBNAIL 1: Rainwater Harvesting
+               data-project="water"  →  opens modal[data-modal="water"]
+               Thumbnail image: proj_thumb_water.jpg
+          ──────────────────────────────────────────────────────────── -->
+          <article
+            class="proj-thumb-card"
+            data-project="water"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+            aria-label="Open Rain Water Harvesting project details"
+          >
+            <!-- Thumbnail image — provides the first visual impression -->
+            <div class="proj-thumb-img-wrap">
+              <img
+                src="proj_thumb_water.jpg"
+                alt="Rain Water Harvesting System project thumbnail"
+                class="proj-thumb-img"
+                loading="lazy"
+              />
+              <!-- Hover overlay with 'View Project' CTA -->
+              <div class="proj-thumb-overlay" aria-hidden="true">
+                <span class="proj-thumb-cta">▶ VIEW PROJECT</span>
+              </div>
+            </div>
+
+            <!-- Thumbnail footer — category badge + title + tags -->
+            <div class="proj-thumb-body">
+              <!-- Category badge styled in eco-green accent -->
+              <span class="proj-thumb-badge badge-eco">🌿 Environmental</span>
+              <h3 class="proj-thumb-title">Rain Water Harvesting System</h3>
+              <p class="proj-thumb-summary">Eco-friendly water conservation initiative for urban &amp; rural communities</p>
+              <!-- Compact tech chips shown on the thumbnail -->
+              <div class="proj-thumb-chips">
+                <span class="proj-chip">Sustainable Design</span>
+                <span class="proj-chip">Groundwater</span>
+                <span class="proj-chip">Hardware</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─────────────────────────────────────────────────────────
+               THUMBNAIL 2: Voltage Fluctuations Detection
+               data-project="voltage" → opens modal[data-modal="voltage"]
+               Thumbnail image: proj_thumb_voltage.jpg
+          ──────────────────────────────────────────────────────────── -->
+          <article
+            class="proj-thumb-card"
+            data-project="voltage"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+            aria-label="Open Voltage Fluctuations Detection project details"
+          >
+            <div class="proj-thumb-img-wrap">
+              <img
+                src="proj_thumb_voltage.jpg"
+                alt="Voltage Fluctuations Detection System project thumbnail"
+                class="proj-thumb-img"
+                loading="lazy"
+              />
+              <div class="proj-thumb-overlay" aria-hidden="true">
+                <span class="proj-thumb-cta">▶ VIEW PROJECT</span>
+              </div>
+            </div>
+
+            <div class="proj-thumb-body">
+              <!-- Category badge styled in electric-yellow accent -->
+              <span class="proj-thumb-badge badge-electric">⚡ Electrical Safety</span>
+              <h3 class="proj-thumb-title">Voltage Fluctuations Detection</h3>
+              <p class="proj-thumb-summary">Hardware-software system detecting voltage spikes to protect appliances</p>
+              <div class="proj-thumb-chips">
+                <span class="proj-chip">Voltage Sensing</span>
+                <span class="proj-chip">Circuit Design</span>
+                <span class="proj-chip">Safety</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─────────────────────────────────────────────────────────
+               THUMBNAIL 3: Personal Developer Portfolio
+               data-project="portfolio" → opens modal[data-modal="portfolio"]
+               Thumbnail image: proj_thumb_portfolio.jpg
+          ──────────────────────────────────────────────────────────── -->
+          <article
+            class="proj-thumb-card"
+            data-project="portfolio"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+            aria-label="Open Personal Developer Portfolio project details"
+          >
+            <div class="proj-thumb-img-wrap">
+              <img
+                src="proj_thumb_portfolio.jpg"
+                alt="Personal Developer Portfolio Website project thumbnail"
+                class="proj-thumb-img"
+                loading="lazy"
+              />
+              <div class="proj-thumb-overlay" aria-hidden="true">
+                <span class="proj-thumb-cta">▶ VIEW PROJECT</span>
+              </div>
+            </div>
+
+            <div class="proj-thumb-body">
+              <!-- Category badge styled in purple/indigo accent -->
+              <span class="proj-thumb-badge badge-web">🌐 Web Dev</span>
+              <h3 class="proj-thumb-title">Personal Developer Portfolio</h3>
+              <p class="proj-thumb-summary">Retro pixel-art portfolio with dark/light theme engine &amp; animations</p>
+              <div class="proj-thumb-chips">
+                <span class="proj-chip">HTML5</span>
+                <span class="proj-chip">CSS3</span>
+                <span class="proj-chip">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /proj-thumb-grid -->
+      </div><!-- /section-container -->
+    </section><!-- /projects -->
+
+
+    <!-- ======================================================= -->
+    <!--       PROJECT DETAIL MODAL (hidden by default)          -->
+    <!-- ======================================================= -->
+    <!--
+      MODAL SYSTEM EXPLAINED:
+      ─────────────────────────────────────────────────────────────
+      • #proj-detail-modal is a single full-screen overlay.
+      • Inside it, each .proj-modal-content block represents ONE project.
+      • Each block carries [data-modal="<id>"] that matches the
+        thumbnail's [data-project="<id>"] — this is the ONE-TO-ONE link.
+      • JS hides all blocks and reveals only the matching one,
+        then sets aria-hidden="false" on the modal for accessibility.
+      • Closing: click backdrop, press Escape, or click ✕ button.
+    -->
+    <div
+      id="proj-detail-modal"
+      class="proj-modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="proj-modal-title"
+    >
+      <!-- Backdrop — clicking this area closes the modal -->
+      <div class="proj-modal-backdrop" id="proj-modal-backdrop" aria-hidden="true"></div>
+
+      <!-- Modal panel container -->
+      <div class="proj-modal-panel">
+
+        <!-- Close button (top-right corner) -->
+        <button
+          id="proj-modal-close"
+          class="proj-modal-close pixel-btn"
+          type="button"
+          aria-label="Close project detail"
+        >✕ CLOSE</button>
+
+        <!-- ─────────────────────────────────────────────────────
+             DETAIL PANEL 1: Rainwater Harvesting
+             data-modal="water" matches thumbnail data-project="water"
+        ──────────────────────────────────────────────────────── -->
+        <div class="proj-modal-content" data-modal="water" hidden>
+          <div class="proj-modal-hero">
+            <img src="proj_thumb_water.jpg" alt="Rainwater Harvesting project banner" class="proj-modal-banner" />
+            <div class="proj-modal-hero-overlay">
+              <span class="proj-modal-cat badge-eco">🌿 Environmental Sustainability</span>
+              <h2 id="proj-modal-title" class="proj-modal-heading">Rain Water Harvesting in Urban &amp; Rural Areas</h2>
+              <span class="proj-modal-duration">⏱ Duration: 3 Months · 2025</span>
+            </div>
+          </div>
+
+          <div class="proj-modal-body">
+            <!-- Project overview -->
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">📋 Project Overview</h3>
+              <p>Designed and conceptualised an eco-friendly rainwater harvesting initiative focused on collecting and conserving rainwater for future use. The system promotes groundwater recharge mechanisms and researched filtration techniques suitable for households, colleges, and rural communities to tackle water scarcity.</p>
+            </div>
+
+            <!-- Key outcomes -->
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🏆 Key Outcomes</h3>
+              <ul class="proj-modal-list">
+                <li>Researched and documented three filtration methods viable for low-cost deployment</li>
+                <li>Modelled groundwater recharge potential for a college campus scenario</li>
+                <li>Promoted sustainable community water usage across urban and rural zones</li>
+                <li>Produced technical documentation and sustainability impact report</li>
+              </ul>
+            </div>
+
+            <!-- Tech / skills used -->
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🛠 Skills &amp; Methods</h3>
+              <div class="proj-modal-tags">
+                <span class="proj-modal-tag">Groundwater Recharge</span>
+                <span class="proj-modal-tag">Filtration Systems</span>
+                <span class="proj-modal-tag">Sustainable Design</span>
+                <span class="proj-modal-tag">Resource Conservation</span>
+                <span class="proj-modal-tag">Urban &amp; Rural Impact</span>
+                <span class="proj-modal-tag">Technical Documentation</span>
+              </div>
+            </div>
+
+            <!-- Action links -->
+            <div class="proj-modal-actions">
+              <a href="#contact" class="pixel-btn pixel-btn-primary" onclick="document.getElementById('proj-detail-modal').setAttribute('aria-hidden','true');document.getElementById('proj-detail-modal').style.display='none'">✉ Enquire About Project</a>
+            </div>
+          </div>
+        </div><!-- /data-modal="water" -->
+
+        <!-- ─────────────────────────────────────────────────────
+             DETAIL PANEL 2: Voltage Fluctuations Detection
+             data-modal="voltage" matches thumbnail data-project="voltage"
+        ──────────────────────────────────────────────────────── -->
+        <div class="proj-modal-content" data-modal="voltage" hidden>
+          <div class="proj-modal-hero">
+            <img src="proj_thumb_voltage.jpg" alt="Voltage Fluctuations project banner" class="proj-modal-banner" />
+            <div class="proj-modal-hero-overlay">
+              <span class="proj-modal-cat badge-electric">⚡ Electrical Safety &amp; Monitoring</span>
+              <h2 id="proj-modal-title-2" class="proj-modal-heading">Voltage Fluctuations Detection System</h2>
+              <span class="proj-modal-duration">⏱ Duration: 3 Months · 2025</span>
+            </div>
+          </div>
+
+          <div class="proj-modal-body">
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">📋 Project Overview</h3>
+              <p>Developed a hardware-software safety mechanism to rapidly detect sudden voltage spikes and drops, protecting sensitive electrical and computing appliances from damage. Handled circuit design, component integration, sensor testing, and produced detailed reliability metrics documentation.</p>
+            </div>
+
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🏆 Key Outcomes</h3>
+              <ul class="proj-modal-list">
+                <li>Achieved zero-error hardware validation across all test scenarios</li>
+                <li>Integrated voltage sensor modules with real-time alert relay system</li>
+                <li>Documented full system reliability report and component specifications</li>
+                <li>Demonstrated surge protection for appliances in lab environment</li>
+              </ul>
+            </div>
+
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🛠 Skills &amp; Methods</h3>
+              <div class="proj-modal-tags">
+                <span class="proj-modal-tag">Voltage Sensing</span>
+                <span class="proj-modal-tag">Hardware Circuitry</span>
+                <span class="proj-modal-tag">Relay Modules</span>
+                <span class="proj-modal-tag">System Reliability</span>
+                <span class="proj-modal-tag">Surge Protection</span>
+                <span class="proj-modal-tag">Component Integration</span>
+              </div>
+            </div>
+
+            <div class="proj-modal-actions">
+              <a href="#contact" class="pixel-btn pixel-btn-primary" onclick="document.getElementById('proj-detail-modal').setAttribute('aria-hidden','true');document.getElementById('proj-detail-modal').style.display='none'">✉ Enquire About Project</a>
+            </div>
+          </div>
+        </div><!-- /data-modal="voltage" -->
+
+        <!-- ─────────────────────────────────────────────────────
+             DETAIL PANEL 3: Personal Developer Portfolio
+             data-modal="portfolio" matches thumbnail data-project="portfolio"
+        ──────────────────────────────────────────────────────── -->
+        <div class="proj-modal-content" data-modal="portfolio" hidden>
+          <div class="proj-modal-hero">
+            <img src="proj_thumb_portfolio.jpg" alt="Portfolio website project banner" class="proj-modal-banner" />
+            <div class="proj-modal-hero-overlay">
+              <span class="proj-modal-cat badge-web">🌐 Web Development</span>
+              <h2 id="proj-modal-title-3" class="proj-modal-heading">Personal Developer Portfolio &amp; Theme Engine</h2>
+              <span class="proj-modal-duration">🔁 Status: Active · 2026</span>
+            </div>
+          </div>
+
+          <div class="proj-modal-body">
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">📋 Project Overview</h3>
+              <p>Engineered a high-performance, responsive portfolio website featuring semantic HTML5 markup, a modern dark/light theme toggle system, accessible pixel-art navigation, glassmorphism aesthetics, smooth scroll-triggered animations, and an interactive terminal chat assistant.</p>
+            </div>
+
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🏆 Key Features</h3>
+              <ul class="proj-modal-list">
+                <li>Pixel-art retro design with 8-bit / 16-bit aesthetic elements throughout</li>
+                <li>Dual theme engine: auto-detects system preference + manual toggle</li>
+                <li>Animated skill XP bars, timeline cards, and IntersectionObserver scroll triggers</li>
+                <li>Responsive layout: desktop sidebar + mobile drawer navigation</li>
+                <li>Interactive bot terminal chat with quick-query chips</li>
+              </ul>
+            </div>
+
+            <div class="proj-modal-section">
+              <h3 class="proj-modal-section-title">🛠 Technologies Used</h3>
+              <div class="proj-modal-tags">
+                <span class="proj-modal-tag">Semantic HTML5</span>
+                <span class="proj-modal-tag">Vanilla CSS3</span>
+                <span class="proj-modal-tag">JavaScript ES6+</span>
+                <span class="proj-modal-tag">CSS Custom Properties</span>
+                <span class="proj-modal-tag">Flexbox &amp; Grid</span>
+                <span class="proj-modal-tag">IntersectionObserver API</span>
+                <span class="proj-modal-tag">Responsive Design</span>
+                <span class="proj-modal-tag">Glassmorphism</span>
+              </div>
+            </div>
+
+            <div class="proj-modal-actions">
+              <a href="https://github.com/nayanayadav113-wq" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-primary">★ GitHub Repository ↗</a>
+            </div>
+          </div>
+        </div><!-- /data-modal="portfolio" -->
+
+      </div><!-- /proj-modal-panel -->
+    </div><!-- /proj-detail-modal -->
+
+
+    <!-- ======================================================= -->
+    <!--              EMBEDDED YOUTUBE VIDEO SECTION             -->
+    <!-- ======================================================= -->
+    <!--
+      SECTION: YouTube — Portfolio Introduction & Video Showcase
+      ──────────────────────────────────────────────────────────
+      Layout:
+        1. .yt-hero  → A large "featured" video that acts as Nayana's
+                        portfolio introduction / highlight reel.
+                        Uses aspect-ratio: 16/9 for true CSS responsiveness.
+                        Styled with a pixel-art frame + corner deco + scanlines.
+        2. .yt-grid  → Three supporting videos (3-column grid), each with
+                        a category badge and caption.
+
+      Privacy: All embeds use youtube-nocookie.com — no cookies until play.
+    -->
+    <section id="youtube" class="section yt-section" aria-labelledby="youtube-title">
+      <div class="section-container">
+
+        <!-- ── Section Header ──────────────────────────────── -->
+        <header class="section-header">
+          <div class="pixel-section-tag">◆ VIDEO ARCADE ◆</div>
+          <h2 id="youtube-title" class="section-title">Video Showcase</h2>
+          <p class="section-subtitle">Portfolio intro, project demos &amp; engineering inspiration</p>
+        </header>
+
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--   FEATURED HERO VIDEO — Portfolio Introduction     -->
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--
+          This is the PRIMARY embed — a full-width hero video intended to
+          serve as Nayana's portfolio introduction / highlight reel.
+
+          RESPONSIVENESS TECHNIQUE:
+            The .yt-hero-embed-wrap uses:
+              aspect-ratio: 16 / 9;
+            This is the modern CSS approach: the container's height is
+            automatically derived from its width, always keeping a perfect
+            16:9 ratio at every viewport size — no JS required.
+
+          The iframe is set to width:100% height:100% to fill that box.
+        -->
+        <div class="yt-hero" aria-label="Featured portfolio introduction video">
+
+          <!-- Pixel-art corner decorations (CSS-drawn, purely decorative) -->
+          <span class="yt-corner yt-corner--tl" aria-hidden="true"></span>
+          <span class="yt-corner yt-corner--tr" aria-hidden="true"></span>
+          <span class="yt-corner yt-corner--bl" aria-hidden="true"></span>
+          <span class="yt-corner yt-corner--br" aria-hidden="true"></span>
+
+          <!-- Retro scanline overlay for pixel-art aesthetic -->
+          <div class="yt-scanlines" aria-hidden="true"></div>
+
+          <!-- HUD label bar — sits above the video frame -->
+          <div class="yt-hero-hud" aria-hidden="true">
+            <span class="yt-hud-dot"></span>
+            <span class="yt-hud-label">▶ NOW PLAYING — PORTFOLIO INTRO</span>
+            <span class="yt-hud-right">📺 HD · 16:9</span>
+          </div>
+
+          <!--
+            FEATURED VIDEO EMBED
+            ─────────────────────────────────────────────────
+            This video is a coding portfolio showcase / introduction
+            to inspire visitors and demonstrate Nayana's approach
+            to software engineering.
+
+            Embed uses youtube-nocookie.com (privacy-enhanced mode):
+              • No tracking cookies are set until the user presses play
+              • ?rel=0            → no unrelated suggestions at end
+              • ?modestbranding=1 → minimal YouTube branding
+              • ?color=white      → white progress bar for dark UI contrast
+          -->
+          <div class="yt-hero-embed-wrap">
+            <iframe
+              id="yt-featured"
+              class="yt-hero-iframe"
+              src="https://www.youtube-nocookie.com/embed/SqcY0GlETPk?rel=0&modestbranding=1&color=white"
+              title="Computer Science Student Portfolio Introduction – Skills, Projects & Journey"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <!--
+            CAPTION BLOCK
+            ─────────────────────────────────────────────────
+            The caption explains the video's purpose and content to visitors.
+            It sits below the video frame but inside the pixel-art border.
+          -->
+          <div class="yt-hero-caption">
+
+            <!-- Video metadata row: category badge + stat chips -->
+            <div class="yt-hero-meta">
+              <span class="yt-hero-badge">
+                <span class="yt-badge-dot"></span>
+                👾 Portfolio Introduction
+              </span>
+              <div class="yt-hero-stats">
+                <span class="yt-stat-chip">⏱ ~5 min watch</span>
+                <span class="yt-stat-chip">🎓 CS Engineering</span>
+                <span class="yt-stat-chip">🌟 Highlight Reel</span>
+              </div>
+            </div>
+
+            <!-- Caption title and body text -->
+            <h3 class="yt-hero-title">
+              Introduction to a CS Engineering Portfolio
+            </h3>
+
+            <!--
+              SHORT CAPTION EXPLAINING THE VIDEO'S CONTENT:
+              This video serves as an overview of what a Computer Science
+              engineering portfolio looks like — covering real-world projects,
+              technical skills, and the student journey from beginner to builder.
+              It mirrors Nayana's own path: from academic foundations to practical
+              applications in Python, hardware-software integration, and web dev.
+            -->
+            <p class="yt-hero-desc">
+              A curated walkthrough of what it means to build a meaningful
+              <strong>Computer Science engineering portfolio</strong> — covering real projects,
+              technical skills, and the journey from academic foundations to practical,
+              working solutions. This video reflects the same spirit as Nayana's portfolio:
+              turning theory into tangible, impactful software.
+            </p>
+
+            <!-- Tag row -->
+            <div class="yt-hero-tags">
+              <span class="yt-tag">Python</span>
+              <span class="yt-tag">Web Development</span>
+              <span class="yt-tag">Hardware Projects</span>
+              <span class="yt-tag">Software Engineering</span>
+              <span class="yt-tag">Student Portfolio</span>
+            </div>
+
+          </div><!-- /yt-hero-caption -->
+        </div><!-- /yt-hero -->
+
+
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--   SUPPORTING VIDEO GRID — 3 Related Videos        -->
+        <!-- ══════════════════════════════════════════════════ -->
+        <!--
+          SECONDARY VIDEOS:
+          These three cards support the main hero video and relate
+          to specific projects in Nayana's portfolio.
+
+          RESPONSIVENESS TECHNIQUE (grid cards):
+            .yt-embed-wrap uses the classic padding-top: 56.25% trick.
+            Height is set to 0, then padding pushes the box open to exactly
+            9/16 = 56.25% of the container width. The iframe is absolutely
+            positioned inside to fill 100% × 100%.
+            Both techniques (aspect-ratio and padding-top) are used here to
+            show the two main CSS responsiveness approaches.
+        -->
+        <div class="yt-secondary-label" aria-hidden="true">
+          <span class="pixel-section-tag small">── RELATED VIDEOS ──</span>
+        </div>
+
+        <div class="yt-grid">
+
+          <!-- ─────────────────────────────────────────────────
+               CARD 1: Python — Nayana's primary language
+          ──────────────────────────────────────────────────── -->
+          <div class="yt-card">
+            <!--
+              Responsive 16:9 wrapper — padding-top technique:
+              height: 0 + padding-top: 56.25% creates the space;
+              the iframe fills it absolutely.
+            -->
+            <div class="yt-embed-wrap">
+              <iframe
+                id="yt-video-1"
+                class="yt-iframe"
+                src="https://www.youtube-nocookie.com/embed/rfscVS0vtbw?rel=0&modestbranding=1"
+                title="Learn Python - Full Course for Beginners"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <!--
+              Caption: explains how this video connects to Nayana's skills.
+              Python is her primary language (90 XP in the Skills section).
+            -->
+            <div class="yt-card-caption">
+              <span class="yt-card-badge">🐍 Python</span>
+              <h3 class="yt-card-title">Learn Python – Full Course for Beginners</h3>
+              <p class="yt-card-desc">
+                Comprehensive Python fundamentals — mirroring Nayana's
+                primary programming language (90 XP), used for scripting,
+                automation, and project logic.
+              </p>
+            </div>
+          </div>
+
+          <!-- ─────────────────────────────────────────────────
+               CARD 2: Rainwater Harvesting — links to Project 1
+          ──────────────────────────────────────────────────── -->
+          <div class="yt-card">
+            <div class="yt-embed-wrap">
+              <!--
+                Linked to the "Rain Water Harvesting System" project.
+                Explains the eco-engineering concept behind the project.
+              -->
+              <iframe
+                id="yt-video-2"
+                class="yt-iframe"
+                src="https://www.youtube-nocookie.com/embed/A6tBfMiasZU?rel=0&modestbranding=1"
+                title="Rainwater Harvesting System Explained"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="yt-card-caption">
+              <span class="yt-card-badge badge-eco">🌿 Eco-Tech</span>
+              <h3 class="yt-card-title">Rainwater Harvesting – System Explained</h3>
+              <p class="yt-card-desc">
+                Concept walkthrough for rainwater collection &amp; filtration —
+                directly backing Nayana's environmental sustainability project
+                for urban and rural communities.
+              </p>
+            </div>
+          </div>
+
+          <!-- ─────────────────────────────────────────────────
+               CARD 3: Web Dev — links to Portfolio Project
+          ──────────────────────────────────────────────────── -->
+          <div class="yt-card">
+            <div class="yt-embed-wrap">
+              <!--
+                Linked to the "Personal Developer Portfolio" project.
+                Shows HTML, CSS & JS techniques used to build the portfolio.
+              -->
+              <iframe
+                id="yt-video-3"
+                class="yt-iframe"
+                src="https://www.youtube-nocookie.com/embed/0YFrGy_mzjY?rel=0&modestbranding=1"
+                title="Build a Responsive Portfolio Website with HTML CSS JS"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="yt-card-caption">
+              <span class="yt-card-badge badge-web">🌐 Web Dev</span>
+              <h3 class="yt-card-title">Build a Responsive Portfolio – HTML, CSS &amp; JS</h3>
+              <p class="yt-card-desc">
+                Modern portfolio techniques using Semantic HTML5, CSS3 &amp; ES6+
+                JavaScript — the exact stack powering Nayana's developer portfolio.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /yt-grid -->
+      </div><!-- /section-container -->
+    </section><!-- /youtube -->
+
+    <!-- ======================================================= -->
+    <!--                 TESTIMONIALS SECTION                    -->
+    <!-- ======================================================= -->
+    <!-- 
+      SECTION: Testimonials
+      Feedback & endorsements from mentors, teammates, and academic leads
+    -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-title">
+      <div class="section-container">
+        <header class="section-header">
+          <h2 id="testimonials-title" class="section-title">Testimonials &amp; Endorsements</h2>
+          <p class="section-subtitle">What professors, mentors, and collaborative teammates say</p>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="pixel-dialogue-card">
+            <div class="dialogue-card-badge">★ FACULTY MENTOR</div>
+            <p class="dialogue-quote">
+              "Nayana exhibits remarkable discipline and academic curiosity. Her dedication to understanding both
+              low-level mechanics and real-world system impact makes her an outstanding engineering talent."
+            </p>
+            <div class="dialogue-author">
+              <span class="author-avatar" aria-hidden="true">👨‍🏫</span>
+              <div>
+                <h3 class="author-name">Department Faculty</h3>
+                <span class="author-role">AIT, Chikkamagaluru</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="pixel-dialogue-card">
+            <div class="dialogue-card-badge">★ PROJECT COLLABORATOR</div>
+            <p class="dialogue-quote">
+              "Collaborating with Nayana on the Rainwater Harvesting initiative showed me her strong problem-solving
+              acumen and leadership. She consistently delivers well-researched, dependable work."
+            </p>
+            <div class="dialogue-author">
+              <span class="author-avatar" aria-hidden="true">🤝</span>
+              <div>
+                <h3 class="author-name">Project Teammate</h3>
+                <span class="author-role">Sustainability Initiative</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="pixel-dialogue-card">
+            <div class="dialogue-card-badge">★ PEER REVIEW</div>
+            <p class="dialogue-quote">
+              "In our Voltage Fluctuations Detection testing, Nayana was exceptionally thorough with hardware-software
+              validation, ensuring zero errors and clear system documentation."
+            </p>
+            <div class="dialogue-author">
+              <span class="author-avatar" aria-hidden="true">⚡</span>
+              <div>
+                <h3 class="author-name">Engineering Peer</h3>
+                <span class="author-role">Hardware Systems Lab</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                     CHAT SECTION                        -->
+    <!-- ======================================================= -->
+    <!-- 
+      SECTION: Chat
+      Interactive 8-bit retro assistant terminal for quick questions
+    -->
+    <section id="chat" class="section chat-section" aria-labelledby="chat-title">
+      <div class="section-container">
+        <header class="section-header">
+          <h2 id="chat-title" class="section-title">Interactive Terminal Chat</h2>
+          <p class="section-subtitle">Chat with Nayana's virtual assistant bot or test quick queries</p>
+        </header>
+
+        <div class="pixel-chat-console">
+          <!-- Terminal Header Bar -->
+          <div class="chat-console-header">
+            <div class="console-title">
+              <span class="pixel-prompt">&gt;</span> NAYANA_BOT.EXE [V1.0 - ONLINE]
+            </div>
+            <div class="console-controls" aria-hidden="true">
+              <span class="ctrl-btn min">_</span>
+              <span class="ctrl-btn max">□</span>
+              <span class="ctrl-btn close">✕</span>
+            </div>
+          </div>
+
+          <!-- Chat History Log -->
+          <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+            <div class="chat-msg bot-msg">
+              <span class="msg-sender">[BOT]:</span>
+              <span class="msg-text">Hello! I am Nayana's interactive virtual assistant. Click a quick quest below or
+                ask me about her skills, projects, or education!</span>
+            </div>
+          </div>
+
+          <!-- Quick Question Prompt Chips -->
+          <div class="chat-prompt-chips" aria-label="Quick questions">
+            <button type="button" class="pixel-chip" data-query="skills">⚡ What are your skills?</button>
+            <button type="button" class="pixel-chip" data-query="projects">📁 Tell me about your projects</button>
+            <button type="button" class="pixel-chip" data-query="education">🎓 What is your education?</button>
+            <button type="button" class="pixel-chip" data-query="contact">✉ How can I contact you?</button>
+          </div>
+
+          <!-- Chat Input Row -->
+          <form id="pixel-chat-form" class="chat-input-form">
+            <span class="chat-prompt-symbol">&gt;</span>
+            <input type="text" id="pixel-chat-input" class="pixel-chat-input"
+              placeholder="Type a question (e.g. 'skills', 'projects', 'resume')..." autocomplete="off"
+              aria-label="Ask a question" />
+            <button type="submit" class="pixel-btn pixel-chat-send-btn">
+              SEND ↵
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!--                    CONTACT SECTION                      -->
+    <!-- ======================================================= -->
+    <!-- 
+      SECTION: Contact
+      Direct contact channels and interactive message dispatch form
+    -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="section-container">
+        <header class="section-header">
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating or have an opportunity? Let's connect!</p>
+        </header>
+
+        <div class="contact-wrapper">
+          <!-- Direct Contact Information -->
+          <div class="contact-info-card">
+            <h3 class="info-card-title">Contact Details</h3>
+            <p class="info-card-desc">Feel free to reach out via email or phone. I'm always open to discussing new
+              ideas, software engineering opportunities, or academic collaborations.</p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:nayanayadav113@gmail.com" class="contact-val">nayanayadav113@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+919482693272" class="contact-val">+91 94826 93272</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Chikkamagaluru / Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/nayana-r-323054398" target="_blank" rel="noopener noreferrer"
+                    class="contact-val">nayana-r-323054398 ↗</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/nayanayadav113-wq" target="_blank" rel="noopener noreferrer"
+                    class="contact-val">nayanayadav113-wq ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="info-card-title">Send a Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="jane@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Project collaboration / Inquiry"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4"
+                  placeholder="Hi Nayana, I came across your portfolio and..." required></textarea>
+              </div>
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">Send Message</button>
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!--                      SITE FOOTER                          -->
+  <!-- ========================================================= -->
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          &lt;<span class="logo-accent">Nayana</span>/&gt;
+        </a>
+        <p class="footer-copy">&copy; 2026 Nayana R. All rights reserved.</p>
+      </div>
+
+      <!-- Social Media & Professional Profile Links -->
+      <nav class="footer-social-nav" aria-label="Social Links">
+        <ul class="social-links-list">
+          <li><a href="https://github.com/nayanayadav113-wq" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub Profile">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/nayana-r-323054398" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn Profile">LinkedIn</a></li>
+          <li><a href="mailto:nayanayadav113@gmail.com" aria-label="Direct Email">Email</a></li>
+        </ul>
+      </nav>
+
+      <!-- Back to Top link -->
+      <a href="#site-header" class="back-to-top" aria-label="Back to top of page">
+        <span>↑ Back to top</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+
+</html>
